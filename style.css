@@ -1,0 +1,274 @@
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+1 of 2,745
+(no subject)
+Inbox
+
+govardhana chakravarthi
+Attachments
+9:40 PM (5 minutes ago)
+to me
+
+
+ 2 Attachments
+  •  Scanned by Gmail
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f6fb;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 950px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+header {
+  border-bottom: 1px solid #e3e7f0;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  color: #1a3c8b;
+  margin-bottom: 4px;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #cbd5f5;
+}
+
+.btn-outline:hover {
+  background: #f1f5f9;
+}
+
+.btn-small {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+}
+
+/* Login */
+.login-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.error {
+  font-size: 0.8rem;
+  color: #b91c1c;
+  margin-top: 3px;
+  min-height: 14px;
+}
+
+.info {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* Dashboard / attendance */
+.top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.top-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-day {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.badge-user {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.summary {
+  font-size: 0.9rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.summary span {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 8px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  background: #eff4ff;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.status-pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-present {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-absent {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-not-marked {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.no-data {
+  text-align: center;
+  color: #64748b;
+  padding: 16px 0;
+}
+
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 1.1rem;
+  }
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}
+style.css
+Displaying style.css.

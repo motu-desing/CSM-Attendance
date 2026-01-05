@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Attendance Portal (JNTUH Style)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a="back-link" href="../index.html">&larr; CSM Attendance</a>
+  <div class="card">
+    <header>
+      <h1>Daily Attendance Portal (JNTUH Style)</h1>
+      <p>Login and mark student attendance once per day. Attendance is stored locally in your browser.</p>
+    </header>
+
+    <!-- LOGIN PAGE -->
+    <section id="loginSection">
+      <div class="login-wrapper">
+        <h2 class="login-title">Login</h2>
+        <p class="info">Demo credentials: <b>admin</b> / <b>1234</b></p>
+
+        <div class="form-group margin-top-10">
+          <label for="loginUser">Username</label>
+          <input type="text" id="loginUser" placeholder="Enter username" />
+        </div>
+
+        <div class="form-group">
+          <label for="loginPass">Password</label>
+          <input type="password" id="loginPass" placeholder="Enter password" />
+          <div class="error" id="loginError"></div>
+        </div>
+
+        <button class="btn-primary" id="loginBtn">Login</button>
+      </div>
+    </section>
+
+    <!-- ATTENDANCE DASHBOARD -->
+    <section id="dashboardSection" class="hidden">
+      <div class="top-row">
+        <div>
+          <span class="badge badge-day" id="todayBadge"></span>
+          <span class="badge badge-user" id="userBadge"></span>
+        </div>
+        <div class="top-actions">
+          <button class="btn-outline btn-small" id="resetTodayBtn">Reset today</button>
+          <button class="btn-outline btn-small" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+
+      <div class="summary" id="summaryText">
+        No attendance marked yet for today.
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Sl. No</th>
+              <th>Student Name</th>
+              <th>Status (Today)</th>
+              <th>Action</th>
+              <th>Total Days</th>
+              <th>Present Days</th>
+              <th>Attendance %</th>
+            </tr>
+          </thead>
+          <tbody id="studentTableBody">
+            <tr>
+              <td colspan="7" class="no-data">No students configured.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
